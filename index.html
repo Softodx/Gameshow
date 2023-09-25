@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo3.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a923bd3c5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Gameshow</title>
+  </head>
+  <body>
+
+    <header class="menu-despegable">
+        <h1 class="h1-menu">
+            <a href="index.html" class="a-menu link-color-blanco">Gameshow</a>
+        </h1>
+
+        <i class="button-menu fa-solid fa-bars"></i>
+
+        <nav class="nav-menu">
+            <ul class="ul-menu">
+                <li class="li-menu"><a href="" class="header-container-top-btn-content"><i class="fa-solid fa-medal icon"></i>Anime</a></li>
+                <li class="li-menu"><a href="#contact" class="header-container-top-btn-content"><i class="fa-regular fa-envelope icon"></i>Contact</a></li>
+                <li class="li-menu"><a href="" class="header-container-top-btn-content" id="btn-open-modal"><i class="fa-solid fa-user icon"></i>Log in</a></li>
+                <li class="li-menu"><div class="header-container-top-search">
+                  <input class="header-container-top-search-bar" placeholder="Search">
+                  <button class="header-container-top-search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="header-container-bot">
+      <div class="header-container-bot-subtitles">
+        <a class="header-container-bot-subtitles-content" href="#new">New Games</a>
+        <a class="header-container-bot-subtitles-content" href="#recommended">Recommended</a>
+      </div>
+    </div>
+    <div class="header-container-link">
+      <h3 class="header-container-link-content">
+        <a href="index.html" class="header-container-link-content">
+          <i class="fa-solid fa-house icon"></i
+          ><i class="fa-solid fa-chevron-right icont"></i></a>Gameshow
+      </h3>
+    </div>
+
+    
+
+    <hr class="line" />
+
+    <div class="background">
+      <div id="new" class="background-text"><h3>New Games</h3></div>
+      <img src="img/steam.jpeg" alt="" class="background-img" />
+    </div>
+
+    <div class="content">
+      <div class="content-slides">
+        <div class="content-slides-info">
+          <div class="content-slides-info-main">
+            <hr class="line">
+            <article class="content-slides-info-img">
+              <img src="img/Baldursgate3.jpg" alt="" class="content-slides-info-img-main">
+              <img src="img/Astarion.png" alt="" class="content-slides-info-img-second">
+            </article>
+            <article class="content-slides-info-second">
+              <h3 class="content-slides-info-text element-active1">Baldurs Gate 3</h3>
+              <p class="content-slides-info-text-p element-destiny1"></p>
+            </article>
+            
+          </div>
+
+          <div class="content-slides-info-main">
+            <hr class="line">
+            <article class="content-slides-info-img">
+              <img src="img/Blasphemous2.jpg" alt="" class="content-slides-info-img-main">
+              <img src="img/Blasphemous2.gif" alt="" class="content-slides-info-img-second">
+            </article>
+            <article class="content-slides-info-second">
+              <h3 class="content-slides-info-text element-active2">Blasphemous 2</h3>
+              <p class="content-slides-info-text-p element-destiny2"></p>
+            </article>
+          </div>
+
+          <div class="content-slides-info-main">
+            <hr class="line">
+            <article class="content-slides-info-img">
+              <img src="img/Zelda.jpg" alt="" class="content-slides-info-img-main"/>
+              <img src="img/Link.png" alt="" class="content-slides-info-img-second"/>
+            </article>
+            <article class="content-slides-info-second">
+              <h3 class="content-slides-info-text element-active3">Zelda TotK</h3>
+              <p class="content-slides-info-text-p element-destiny3"></p>
+            </article>
+          </div>
+
+          <div class="content-slides-info-main">
+            <hr class="line">
+            <article class="content-slides-info-img">
+              <img src="img/ArmoredCore6.jpg" alt="" class="content-slides-info-img-main"/>
+              <img src="img/armoredCore6.gif" alt="" class="content-slides-info-img-second"/>
+            </article>
+            <article class="content-slides-info-second">
+              <h3 class="content-slides-info-text element-active4">Armored Core 6</h3>
+              <p class="content-slides-info-text-p element-destiny4"></p>
+            </article>
+          </div>
+
+        </div>
+        <div class="content-slides-info">
+
+        <div class="content-slides-info-main">
+          <hr class="line">
+          <article class="content-slides-info-img">
+            <img src="img/lordsofthefallen.jpg" alt="" class="content-slides-info-img-main"/>
+            <img src="img/lordsofthefallen.png" alt="" class="content-slides-info-img-second"/>
+          </article>
+          <article class="content-slides-info-second">
+            <h3 class="content-slides-info-text element-active5">Lord of the fallen</h3>
+            <p class="content-slides-info-text-p element-destiny5"></p>
+          </article>
+        </div>
+
+        <div class="content-slides-info-main">
+          <hr class="line">
+          <article class="content-slides-info-img">
+            <img src="img/daveTheDiver.jpg" alt="" class="content-slides-info-img-main"/>
+            <img src="img/daveTheDiver.png" alt="" class="content-slides-info-img-second"/>
+          </article>
+          <article class="content-slides-info-second">
+            <h3 class="content-slides-info-text element-active6">Dave the diver</h3>
+            <p class="content-slides-info-text-p element-destiny6"></p>
+          </article>
+        </div>
+
+        <div class="content-slides-info-main">
+          <hr class="line">
+          <article class="content-slides-info-img">
+            <img src="img/payday3.jpg" alt="" class="content-slides-info-img-main"/>
+            <img src="img/payday3.png" alt="" class="content-slides-info-img-second"/>
+          </article>
+          <article class="content-slides-info-second">
+            <h3 class="content-slides-info-text element-active7">Payday 3</h3>
+            <p class="content-slides-info-text-p element-destiny7"></p>
+          </article>
+        </div>
+        <div class="content-slides-info-main">
+          <hr class="line">
+          <article class="content-slides-info-img">
+            <img src="img/SeaofStars.jpg" alt="" class="content-slides-info-img-main"/>
+            <img src="img/SeaofStars.gif" alt="" class="content-slides-info-img-second"/>
+          </article>
+          <article class="content-slides-info-second">
+            <h3 class="content-slides-info-text element-active8">Sea of Stars</h3>
+            <p class="content-slides-info-text-p element-destiny8"></p>
+          </article>
+      </div>
+      </div>
+    </div>
+
+    <hr class="line">
+    <div class="background-second">
+      <div class="background-text"><h3 id="recommended">Recommended</h3></div>
+    </div>
+
+    <div class="second">
+      <article class="second-content">
+        <hr class="line">
+         <iframe class="second-content-video" width="560" height="315" src="https://www.youtube.com/embed/4yyyReoGeXE?si=xi0giCcVvAgZdcUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </article>
+      <article class="second-info">
+        <hr class="line">
+        <div class="second-info-container">
+          <h3 class="second-info-container-title">Baldurs Gate 3</h3>
+          <p class="second-info-container-text">La critica ha aclamado al juego por su gran inmensidad de opciones, misiones, historias. Pues "Larian Studios" ya tenia la formula de un RPG con Divinity 2, con esto y mucho trabajo lograron crear el juego mas cercano al rol real de Dungeons and Dragons.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="second2">
+      <article class="second-info">
+        <hr class="line">
+        <div class="second-info-container">
+          <h3 class="second-info-container-title">Dive the Diver</h3>
+          <p class="second-info-container-text">Un juego que al inicio parece simple, pero al pasar las horas, la cantidad de contenido diferente sigue apreciendo, el juego toma lo mejor de otros titulos, ademas de tener unos graficos Pixelart muy agradables a la vista.</p>
+        </div>
+      </article>
+      <article class="second-content">
+        <hr class="line">
+        <iframe class="second-content-video" width="560" height="315" src="https://www.youtube.com/embed/284XKh1lFHM?si=9BgDaIE3ynRdu64T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </article>
+    </div>
+    
+    <div id="contact" class="footer">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/softodx/" class="footer-icons-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.link/ewpabq" class="footer-icons-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://t.me/AndresGarces" class="footer-icons-icon"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://github.com/Softodx" class="footer-icons-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/andresgarces5049b7266" class="footer-icons-icon"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <hr class="footer-line">
+      <div class="footer-end">
+        <div class="footer-end-content"><h3>Andres Garces</h3></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

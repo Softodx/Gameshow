@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Baldurs Gate 3",
+        "text": "Baldurs Gate 3 es un juego de rol, inspirado en el juego de mesa 'Dungeons and Dragons' usando sus reglas y su diseño de mundo, en este juego puedes aventurarte en un sinfin de historias donde tus decisiones influyen en tu camino e historia."
+    },
+    {
+        "name": "Blasphemous 2",
+        "text": "Segunda entrega del titulo Blasphemous, basado en la historia despues del DLC 'Wounds of Eventide' del juego original, donde se anuncio el regreso del Milagro y se profetizó el nacimiento de un nuevo mesias."
+    },
+    {
+        "name": "Zelda TotK",
+        "text": "Segunda entrega de Zelda Breath of the Wild, un mundo abierto donde la interacion con el entorno crecio en gran medida, pues al tener nuevos poderes de combinacion las posibilidades de explorar los mapas (El cielo, la superficie y el subsuelo) ademas luchar, se hace mas divertido recorrer Hyrule"
+    },
+    {
+        "name": "Armored Core 6",
+        "text": "Con la larga trayectoria de FromSoftware en el sector de los juegos de robots (o mecas) y su característica jugabilidad, ARMORED CORE VI FIRES OF RUBICON suma una nueva experiencia de acción a la serie."
+    },
+    {
+        "name": "Lord of the fallen",
+        "text": "Un mundo inmenso te aguarda en Lords of the Fallen, un nuevo RPG de acción y fantasía con tintes oscuros. Ponte en la piel de uno de los míticos Cruzados de la Oscuridad y emprende una gesta para derrocar a Adyr, el Dios Demonio."
+    },
+    {
+        "name": "Dave the diver",
+        "text": "juego casual de rol y aventuras para un solo jugador que incluye elementos de pesca y exploración del fondo marino durante el día y de gestión de un restaurante de sushi durante la noche, con una gran cantidad de contenido donde no te cansaras de jugar."
+    },
+    {
+        "name": "Payday 3",
+        "text": "La muy esperada secuela de uno de los shooters cooperativos más populares que existen. Desde su lanzamiento, los jugadores de PAYDAY han disfrutado de la emoción de un trabajo perfectamente planeado y ejecutado."
+    },
+    {
+        "name": "Sea of Stars",
+        "text": "Sea of Stars es un RPG por turnos inspirado en los clásicos. Cuenta la historia de dos Hijos del Solsticio que combinarán los poderes del sol y la luna para realizar Magia Eclipse, la única fuerza capaz de defenderse de las monstruosas creaciones del malvado alquimista conocido como El Carnicero."
+    }
+]
