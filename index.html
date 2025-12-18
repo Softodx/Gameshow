@@ -1,4 +1,4 @@
-orn<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -208,58 +208,53 @@ orn<!DOCTYPE html>
       </div>
     </div>
     <script src="script.js"></script>
-      <script>
-  (function () {
-    const avisoId = 'aviso-imagenes-demo';
+    <script>
+      (function () {
+        const avisoId = 'aviso-imagenes-demo';
 
-    // Evitar mostrar el aviso más de una vez por sesión
-    if (sessionStorage.getItem(avisoId)) return;
-    sessionStorage.setItem(avisoId, 'true');
+        const contenedor = document.createElement('div');
+        contenedor.style.position = 'fixed';
+        contenedor.style.bottom = '20px';
+        contenedor.style.right = '20px';
+        contenedor.style.maxWidth = '380px';
+        contenedor.style.background = '#ffffff';
+        contenedor.style.color = '#333';
+        contenedor.style.padding = '16px 20px';
+        contenedor.style.borderRadius = '8px';
+        contenedor.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+        contenedor.style.fontFamily = 'Arial, Helvetica, sans-serif';
+        contenedor.style.fontSize = '14px';
+        contenedor.style.zIndex = '9999';
 
-    const contenedor = document.createElement('div');
-    contenedor.style.position = 'fixed';
-    contenedor.style.bottom = '20px';
-    contenedor.style.right = '20px';
-    contenedor.style.maxWidth = '380px';
-    contenedor.style.background = '#ffffff';
-    contenedor.style.color = '#333';
-    contenedor.style.padding = '16px 20px';
-    contenedor.style.borderRadius = '8px';
-    contenedor.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-    contenedor.style.fontFamily = 'Arial, Helvetica, sans-serif';
-    contenedor.style.fontSize = '14px';
-    contenedor.style.zIndex = '9999';
+        contenedor.innerHTML = `
+          <strong>Aviso:</strong><br>
+          Algunas imágenes pueden no mostrarse correctamente en esta versión de demostración.
+          Esto se debe a limitaciones del entorno de despliegue (GitHub Pages).
+          <br><br>
+          El funcionamiento completo del proyecto se puede observar en el entorno local.
+          <br><br>
+          <button id="cerrarAvisoImg"
+            style="
+              background:#2980b9;
+              color:#fff;
+              border:none;
+              padding:6px 12px;
+              border-radius:4px;
+              cursor:pointer;
+            ">
+            Entendido
+          </button>
+        `;
 
-    contenedor.innerHTML = `
-      <strong>Aviso:</strong><br>
-      Algunas imágenes pueden no mostrarse correctamente en esta versión de demostración.
-      Esto se debe a limitaciones del entorno de despliegue (GitHub Pages).
-      <br><br>
-      El funcionamiento completo del proyecto se puede observar en el entorno local.
-      <br><br>
-      <button id="cerrarAvisoImg"
-        style="
-          background:#2980b9;
-          color:#fff;
-          border:none;
-          padding:6px 12px;
-          border-radius:4px;
-          cursor:pointer;
-        ">
-        Entendido
-      </button>
-    `;
+        document.body.appendChild(contenedor);
 
-    document.body.appendChild(contenedor);
-
-    document
-      .getElementById('cerrarAvisoImg')
-      .addEventListener('click', function () {
-        contenedor.remove();
-      });
-  })();
-</script>
-
+        document
+          .getElementById('cerrarAvisoImg')
+          .addEventListener('click', function () {
+            contenedor.remove();
+          });
+      })();
+    </script>
     
   </body>
 </html>
